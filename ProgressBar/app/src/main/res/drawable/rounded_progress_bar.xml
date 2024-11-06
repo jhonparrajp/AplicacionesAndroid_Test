@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@android:id/background">
+    <shape android:shape="rectangle">
+        <corners android:radius="12dp"/> <!-- Bordes redondeados -->
+        <solid android:color="#FFF"/> <!-- Color del fondo -->
+    </shape>
+</item>
+
+    <item android:id="@android:id/progress" tools:ignore="StateListReachable">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="12dp"/> <!-- Bordes redondeados -->
+                <gradient
+                    android:endColor="#CBF1F5"
+                    android:centerColor="#FFEB3B"
+                    android:startColor="#81CF84"
+                    android:useLevel="true"/> <!-- Color del progreso -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
